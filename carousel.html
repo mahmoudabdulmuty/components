@@ -93,6 +93,22 @@
 				right: 0;
 				transform: translate(50%, -50%);
 			}
+			.dots {
+				display: flex;
+				position: absolute;
+				left: 50%;
+				transform: translate(-50%, 0);
+				bottom: -12%;
+				gap: 10px;
+			}
+			.dot {
+				padding: 4px;
+				border-radius: 50%;
+				border: 2px solid #087f5b;
+			}
+			.dot-fill {
+				background-color: #087f5b;
+			}
 		</style>
 	</head>
 	<body>
@@ -140,10 +156,10 @@
 				</svg>
 			</button>
 			<div class="dots">
-				<button>&nbsp;</button>
-				<button>&nbsp;</button>
-				<button>&nbsp;</button>
-				<button>&nbsp;</button>
+				<button class="dot dot-fill"></button>
+				<button class="dot"></button>
+				<button class="dot"></button>
+				<button class="dot"></button>
 			</div>
 		</section>
 	</body>
