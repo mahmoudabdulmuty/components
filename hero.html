@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<title>Hero Section</title>
+
+		<style>
+			/*
+						SPACING SYSTEM (px)
+						2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+						FONT SIZE SYSTEM (px)
+						10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+						*/
+			/*
+						MAIN COLOR: #087f5b
+						GREY COLOR: #343a40
+						*/
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: 'rubik', sans-serif;
+				color: #343a40;
+				line-height: 1;
+			}
+			li {
+				list-style-type: none;
+			}
+			.flex {
+				display: flex;
+				/* justify-content: center; */
+				align-items: center;
+			}
+			.space-between {
+				justify-content: space-between;
+			}
+
+			.header {
+				color: #fff;
+				height: 100vh;
+				position: relative;
+				padding: 0 5%;
+				background-image: linear-gradient(
+						rgba(0, 0, 0, 0.329),
+						rgba(0, 0, 0, 0.329)
+					),
+					url(hero.jpg);
+				background-size: cover;
+			}
+			.nav {
+				font-size: 20px;
+				font-weight: 700;
+			}
+			.nav img {
+				width: 80px;
+				cursor: pointer;
+			}
+			.bottom-header {
+				width: 50%;
+				position: absolute;
+				top: 50%;
+				transform: translate(0, -50%);
+			}
+
+			.bottom-header h1 {
+				font-size: 52px;
+				margin-bottom: 32px;
+				line-height: 1.05;
+			}
+			.bottom-header p {
+				font-size: 20px;
+				line-height: 1.6;
+				margin-bottom: 48px;
+			}
+			.bottom-header .btn {
+				font-size: 20px;
+				font-weight: 600;
+				background-color: #e67e22;
+				color: #fff;
+				text-decoration: none;
+				display: inline-block;
+				padding: 16px 32px;
+				border-radius: 9px;
+				border: none;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="header">
+			<nav class="nav">
+				<ul class="flex space-between">
+					<li><img src="logo.png" alt="logo image" /></li>
+					<li>Menu</li>
+				</ul>
+			</nav>
+			<div class="bottom-header">
+				<h1>
+					A healty meal <br />
+					delivered to your door, every single day
+				</h1>
+				<p>
+					The smart 365-days-per-year food subscription that will make <br />
+					you eat healty algain. Tailored to your personal tastes and <br />
+					nutritional needs
+				</p>
+				<button class="btn">start eating well</button>
+			</div>
+		</header>
+	</body>
+</html>
