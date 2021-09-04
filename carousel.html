@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<title>Carousel Component</title>
+
+		<style>
+			/*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+			/* 
+      MAIN COLOR: #087f5b
+      GREY COLOR: #343a40
+      */
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: 'Inter', sans-serif;
+				color: #343a40;
+				line-height: 1;
+			}
+			img {
+				height: 200px;
+				transform: scale(1.5);
+				border-radius: 8px;
+			}
+			section {
+				width: 800px;
+				margin: 100px auto;
+				background-color: #087f5b;
+				position: relative;
+
+				padding: 32px;
+				padding-left: 86px;
+				color: #fff;
+				border-radius: 8px;
+
+				display: flex;
+				align-items: center;
+				gap: 98px;
+			}
+			.section__content .quote {
+				font-size: 18px;
+				margin-bottom: 32px;
+				line-height: 1.5;
+			}
+			.section__content .author {
+				font-size: 14px;
+				line-height: 1.5;
+			}
+			.section__content .job {
+				font-size: 14px;
+			}
+			.btn {
+				position: absolute;
+				border-radius: 50%;
+				border: none;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 8px;
+				top: 50%;
+				box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+				background-color: #fff;
+				cursor: pointer;
+			}
+			.btn .icon {
+				width: 24px;
+				height: 24px;
+				stroke: #087f5b;
+			}
+
+			.btn.btn--left {
+				left: 0;
+				transform: translate(-50%, -50%);
+			}
+			.btn.btn-right {
+				right: 0;
+				transform: translate(50%, -50%);
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<img src="maria.jpg" alt="maria" />
+			<div class="section__content">
+				<blockquote class="quote">
+					"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
+					nesciunt aliquid ex atque quibusdam. Rerum officia unde suscipit quo
+					sunt hic illo fugit."
+				</blockquote>
+				<p class="author">Maria de Almeida</p>
+				<p class="job">Senior Product Manager at EDP Comercial</p>
+			</div>
+			<button class="btn btn--left">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="icon"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke="currentColor"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M15 19l-7-7 7-7"
+					/>
+				</svg>
+			</button>
+			<button class="btn btn-right">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="icon"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke="currentColor"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M9 5l7 7-7 7"
+					/>
+				</svg>
+			</button>
+			<div class="dots">
+				<button>&nbsp;</button>
+				<button>&nbsp;</button>
+				<button>&nbsp;</button>
+				<button>&nbsp;</button>
+			</div>
+		</section>
+	</body>
+</html>
