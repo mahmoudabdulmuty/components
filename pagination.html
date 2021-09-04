@@ -34,18 +34,21 @@
 				color: #343a40;
 				line-height: 1;
 			}
-			.pagination {
+			.flex {
 				display: flex;
+				justify-content: center;
 				align-items: center;
-				width: 800px;
-				margin: 100px auto;
-				gap: 15px;
+			}
+			.pagination {
+				margin-top: 100px;
+				gap: 12px;
 			}
 			.btn {
 				border-radius: 50%;
 				border: 1px solid #087f5b;
 				background-color: #fff;
-				padding: 10px;
+				width: 48px;
+				height: 48px;
 				cursor: pointer;
 			}
 			.icon {
@@ -61,20 +64,16 @@
 				stroke: #fff;
 			}
 			.numbers {
-				display: flex;
-				align-items: center;
-				gap: 10px;
+				gap: 12px;
 			}
 			.numbers a {
 				text-decoration: none;
 				color: #000;
-				padding: 15px;
+				height: 36px;
+				width: 36px;
 				border-radius: 50%;
 			}
-			a:hover {
-				background-color: #087f5b;
-				color: #fff;
-			}
+			a:hover,
 			.numbers .num-fill {
 				background-color: #087f5b;
 				color: #fff;
@@ -82,8 +81,8 @@
 		</style>
 	</head>
 	<body>
-		<section class="pagination">
-			<button class="btn">
+		<section class="pagination flex">
+			<button class="btn flex">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					class="icon"
@@ -99,17 +98,17 @@
 					/>
 				</svg>
 			</button>
-			<section class="numbers">
-				<a href="#">1</a>
-				<a href="#">2</a>
-				<a href="#" class="num-fill">3</a>
-				<a href="#">4</a>
-				<a href="#">5</a>
-				<a href="#">6</a>
-				<span>...</span>
-				<a href="#">23</a>
+			<section class="numbers flex">
+				<a class="flex" href="#">1</a>
+				<a class="flex" href="#">2</a>
+				<a class="flex num-fill" href="#">3</a>
+				<a class="flex" href="#">4</a>
+				<a class="flex" href="#">5</a>
+				<a class="flex" href="#">6</a>
+				<span class="flex">...</span>
+				<a class="flex" href="#">23</a>
 			</section>
-			<button class="btn">
+			<button class="btn flex">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					class="icon"
