@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<title>App Layout</title>
+
+		<style>
+			/*
+			   SPACING SYSTEM (px)
+			   2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+			   FONT SIZE SYSTEM (px)
+			   10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+			   */
+			/*
+			   MAIN COLOR: #087f5b
+			   GREY COLOR: #343a40
+			   */
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: 'Inter', sans-serif;
+				color: #343a40;
+				line-height: 1;
+				height: 100vh;
+				font-size: 24px;
+				font-weight: bold;
+
+				display: grid;
+				grid-template-columns: 80px 380px 1fr 250px;
+				grid-template-rows: 80px 1fr;
+			}
+			.flex {
+				display: flex;
+			}
+			.justify-center {
+				justify-content: center;
+			}
+			.align-center {
+				align-items: center;
+			}
+			.vertical-nav {
+				color: #fff;
+				background-color: #343a40;
+				grid-row: 1 / -1;
+				padding-top: 24px;
+			}
+			.main-header {
+				background-color: #7048e8;
+				grid-column: 2/-1;
+				gap: 12px;
+				padding: 0 24px;
+			}
+			.btn {
+				display: inline-block;
+				font-size: 16px;
+				font-weight: bold;
+				background-color: #5f3dc4;
+				border: none;
+				cursor: pointer;
+				color: #fff;
+				padding: 8px 12px;
+			}
+			.btn-custom {
+				margin-left: auto;
+				background-color: #d6336c;
+			}
+			.aside,
+			.info {
+				background-color: #e9ecef;
+			}
+			.aside {
+				flex-direction: column;
+				overflow: scroll;
+				gap: 12px;
+			}
+			.aside .email-no {
+				font-size: 24px;
+				color: #343a40;
+				background-color: #adb5bd;
+				padding: 48px 24px;
+			}
+			.email {
+				background-color: #fff;
+			}
+			.info,
+			.email {
+				padding-top: 12px;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="vertical-nav flex justify-center">NAV</nav>
+		<section class="main-header flex align-center">
+			<button class="btn">New</button>
+			<button class="btn">Reply</button>
+			<button class="btn">Forward</button>
+			<button class="btn">Mark Unread</button>
+			<button class="btn btn-custom">Trash</button>
+		</section>
+		<aside class="aside flex">
+			<button class="email-no flex justify-center">Email 1</button>
+			<button class="email-no flex justify-center">Email 2</button>
+			<button class="email-no flex justify-center">Email 3</button>
+			<button class="email-no flex justify-center">Email 4</button>
+			<button class="email-no flex justify-center">Email 5</button>
+			<button class="email-no flex justify-center">Email 6</button>
+			<button class="email-no flex justify-center">Email 7</button>
+			<button class="email-no flex justify-center">Email 8</button>
+			<button class="email-no flex justify-center">Email 9</button>
+			<button class="email-no flex justify-center">Email 10</button>
+		</aside>
+		<section class="email flex justify-center">Email view</section>
+		<section class="info flex justify-center">Additional info</section>
+	</body>
+</html>
